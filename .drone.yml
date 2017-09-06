@@ -1,0 +1,11 @@
+pipeline:
+  clone:
+    image: ubuntu:16.04
+    depth: 50
+    recursive: true
+    path: github.com/jiajunhuang/blog
+
+  build:
+    image: ubuntu:16.04
+    commands:
+      - echo "hello world"
